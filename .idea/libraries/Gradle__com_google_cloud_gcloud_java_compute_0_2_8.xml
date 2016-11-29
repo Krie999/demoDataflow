@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.cloud:gcloud-java-compute:0.2.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud/gcloud-java-compute/0.2.8/edb6d45c3481c4ea7f21a4177906aceb4e9752ed/gcloud-java-compute-0.2.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud/gcloud-java-compute/0.2.8/85955bfb6183bc702c755eb7b2f4620f8dc8975f/gcloud-java-compute-0.2.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

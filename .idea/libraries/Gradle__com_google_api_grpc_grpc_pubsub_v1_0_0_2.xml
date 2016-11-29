@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.api.grpc:grpc-pubsub-v1:0.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api.grpc/grpc-pubsub-v1/0.0.2/54660367d734faecc548d9ae73fe274c72607441/grpc-pubsub-v1-0.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api.grpc/grpc-pubsub-v1/0.0.2/b8bcb1c9fcf7b19b1e004575e21a817da85f57f2/grpc-pubsub-v1-0.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

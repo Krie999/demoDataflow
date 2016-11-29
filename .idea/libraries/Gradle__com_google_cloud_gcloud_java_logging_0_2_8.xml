@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.cloud:gcloud-java-logging:0.2.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud/gcloud-java-logging/0.2.8/2b5431de4c9b527aa4abe936eaf895d7c1a0bf36/gcloud-java-logging-0.2.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud/gcloud-java-logging/0.2.8/f8f410218415aab4444bc6c2fd8cfffa33bd464c/gcloud-java-logging-0.2.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

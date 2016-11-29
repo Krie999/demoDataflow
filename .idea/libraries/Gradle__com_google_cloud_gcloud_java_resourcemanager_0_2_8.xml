@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.cloud:gcloud-java-resourcemanager:0.2.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud/gcloud-java-resourcemanager/0.2.8/e0757a07de5eb70696a17115bd33a32f1971d427/gcloud-java-resourcemanager-0.2.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud/gcloud-java-resourcemanager/0.2.8/e00f182b3a874363d76cd5f04c4e980139733320/gcloud-java-resourcemanager-0.2.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

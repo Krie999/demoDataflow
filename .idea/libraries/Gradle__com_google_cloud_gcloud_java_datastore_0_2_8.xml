@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.cloud:gcloud-java-datastore:0.2.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud/gcloud-java-datastore/0.2.8/dc178bc847b148ea9e7e12de3c369293b39ef146/gcloud-java-datastore-0.2.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud/gcloud-java-datastore/0.2.8/f873a02f2233c611228fbca20a334ef1197a7aa8/gcloud-java-datastore-0.2.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.api:gax:0.0.14">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api/gax/0.0.14/e6b16c49694f0c5fd42643a2ba58f07036b38a0f/gax-0.0.14.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api/gax/0.0.14/317eac62d07b6668c2b02511b6e9f3b4b5ce20da/gax-0.0.14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

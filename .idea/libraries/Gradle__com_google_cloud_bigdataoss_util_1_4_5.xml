@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.cloud.bigdataoss:util:1.4.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.bigdataoss/util/1.4.5/360299d84097b0ecc692df0417724799ff86a11/util-1.4.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.bigdataoss/util/1.4.5/958b1acad81f26b68ca6f78acbd7498cd89de2b7/util-1.4.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

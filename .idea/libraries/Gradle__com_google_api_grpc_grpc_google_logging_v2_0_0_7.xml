@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.api.grpc:grpc-google-logging-v2:0.0.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api.grpc/grpc-google-logging-v2/0.0.7/e14e89b85fcf5ff30a48b11104c6cfb7c380e472/grpc-google-logging-v2-0.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api.grpc/grpc-google-logging-v2/0.0.7/2eab7b43e82b26aad371183036d57065584b5d85/grpc-google-logging-v2-0.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

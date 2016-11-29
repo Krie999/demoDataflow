@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.cloud:gcloud-java-pubsub:0.2.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud/gcloud-java-pubsub/0.2.8/9ae45f3e01f561ca7880f21e5a70af8b18b02dcd/gcloud-java-pubsub-0.2.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud/gcloud-java-pubsub/0.2.8/1677ff21492dde48a495c1dc5ebfad004e1804ac/gcloud-java-pubsub-0.2.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

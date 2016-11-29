@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.apis:google-api-services-clouddebugger:v2-rev8-1.22.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-clouddebugger/v2-rev8-1.22.0/fd481bf122a6e6d10869463313de8361a87c1b24/google-api-services-clouddebugger-v2-rev8-1.22.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-clouddebugger/v2-rev8-1.22.0/52774b7745875bb99ac7a36f3efa0cee2c08d3ac/google-api-services-clouddebugger-v2-rev8-1.22.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
