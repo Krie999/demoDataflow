@@ -14,6 +14,7 @@ import com.google.cloud.dataflow.sdk.Pipeline;
 import com.google.cloud.dataflow.sdk.io.TextIO;
 import com.google.cloud.dataflow.sdk.options.DataflowPipelineOptions;
 import com.google.cloud.dataflow.sdk.options.PipelineOptionsFactory;
+import com.google.cloud.dataflow.sdk.runners.DataflowPipelineRunner;
 import com.google.cloud.dataflow.sdk.runners.DirectPipelineRunner;
 import com.google.cloud.dataflow.sdk.transforms.*;
 import com.google.cloud.dataflow.sdk.values.*;
@@ -27,7 +28,7 @@ import static com.google.cloud.dataflow.sdk.io.BigQueryIO.Write.to;
  */
 public class SamplePipeline implements Serializable {
     private static String projectName = "deploy-test-2";
-    private String tablePostFix = YOUR_NAME_HIER;
+    private String tablePostFix = "Kevin";
 
     public static final TupleTag<KV<Integer, Integer>> evenNumbers = new TupleTag<KV<Integer, Integer>>() {};
     public static final TupleTag<KV<Integer, Integer>> oddNumbers = new TupleTag<KV<Integer, Integer>>() {};
@@ -41,7 +42,7 @@ public class SamplePipeline implements Serializable {
         } else {
             DataflowPipelineOptions options = PipelineOptionsFactory.create().as(DataflowPipelineOptions.class);
             options.setRunner(DirectPipelineRunner.class); // local
-            //  options.setRunner(DataflowPipelineRunner.class); // remote
+            options.setRunner(DataflowPipelineRunner.class); // remote
             options.setProject(projectName);
             options.setStagingLocation("gs://" + projectName + "/dataflow-files/");
             options.setTempLocation("gs://" + projectName + "/dataflow-temp/");
@@ -51,11 +52,14 @@ public class SamplePipeline implements Serializable {
     }
 
     public SamplePipeline(Pipeline p) {
-        PCollectionTuple collections = p.apply(Create.of(3, 4, 5,5,4,3,3,1,1,1,11, 2, 4, 6)).apply("splitIntegers", ParDo
+        PCollectionTuple collections = p.apply(Create.of(3, 4, 5,5,4,3,3,1,1,1,11, 2, 4, 6))
+                .apply("splitIntegers", ParDo
                 .withOutputTags(allNumbers, TupleTagList.of(oddNumbers).and(evenNumbers))
                 .of(new IntegerToKVFn()));
 
-        collections.get(allNumbers).apply(GroupByKey.<Integer, Integer>create()).apply("number to TableRow", ParDo
+        collections.get(allNumbers)
+                .apply(GroupByKey.<Integer, Integer>create())
+                .apply("number to TableRow", ParDo
                 //.withOutputTags(PROJECTS, TupleTagList.of(SCENARIO))
                 .of(new IntegerToTableRowFn()))
                 .apply("Write Projects to BQ", to(bqTableRef())
@@ -63,7 +67,9 @@ public class SamplePipeline implements Serializable {
                         .withWriteDisposition(WRITE_TRUNCATE)
                         .withCreateDisposition(CREATE_IF_NEEDED));
 
-        collections.get(evenNumbers).apply(GroupByKey.<Integer, Integer>create()).apply(ParDo.of(new IntegerToStringFn()))
+        collections.get(evenNumbers)
+                .apply(GroupByKey.<Integer, Integer>create())
+                .apply(ParDo.of(new IntegerToStringFn()))
                 .apply(TextIO.Write.to("gs://" + projectName + "/dataflow-files/evenNumbers"));
 
         p.run();
@@ -90,7 +96,6 @@ public class SamplePipeline implements Serializable {
     public class IntegerToStringFn extends DoFn<KV<Integer, Iterable<Integer>>, String> {
         @Override
         public void processElement(DoFn.ProcessContext c) throws Exception {
-            TableRow row = new TableRow();
             KV<Integer, Iterable<Integer>> item = (KV<Integer, Iterable<Integer>>) c.element();
             String line = item.getKey().toString();
             int teller = 0;
