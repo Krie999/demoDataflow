@@ -50,7 +50,7 @@ public class SamplePipeline implements Serializable {
     }
 
     public SamplePipeline(Pipeline p) {
-        PCollectionTuple collections = p.apply(Create.of(3, 4, 5, 2, 4, 6)).apply("splitIntegers", ParDo
+        PCollectionTuple collections = p.apply(Create.of(3, 4, 5,5,4,3,3,1,1,1,11, 2, 4, 6)).apply("splitIntegers", ParDo
                 .withOutputTags(allNumbers, TupleTagList.of(oddNumbers).and(evenNumbers))
                 .of(new IntegerToKVFn()));
 
