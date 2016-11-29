@@ -136,7 +136,7 @@ public class SamplePipeline implements Serializable {
         TableReference tableRef = new TableReference();
         tableRef.setProjectId(projectName);
         tableRef.setDatasetId("SampleDataSet");
-        tableRef.setTableId("SampleTableId"+ tablePostFix);
+        tableRef.setTableId("SampleTable_"+ tablePostFix);
         return tableRef;
     }
 }
