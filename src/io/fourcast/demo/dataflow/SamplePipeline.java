@@ -26,7 +26,8 @@ import static com.google.cloud.dataflow.sdk.io.BigQueryIO.Write.to;
  * Created by titatovenaar on 21/11/2016.
  */
 public class SamplePipeline implements Serializable {
-    private static String projectName = "deploy-test-2";
+    private  String projectName = "deploy-test-2";
+    private String tablePostFix = YOUR_NAME_HIER;
 
     public static final TupleTag<KV<Integer, Integer>> evenNumbers = new TupleTag<KV<Integer, Integer>>() {};
     public static final TupleTag<KV<Integer, Integer>> oddNumbers = new TupleTag<KV<Integer, Integer>>() {};
@@ -135,7 +136,7 @@ public class SamplePipeline implements Serializable {
         TableReference tableRef = new TableReference();
         tableRef.setProjectId(projectName);
         tableRef.setDatasetId("SampleDataSet");
-        tableRef.setTableId("SampleTableId");
+        tableRef.setTableId("SampleTableId"+ tablePostFix);
         return tableRef;
     }
 }
