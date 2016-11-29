@@ -26,7 +26,7 @@ import static com.google.cloud.dataflow.sdk.io.BigQueryIO.Write.to;
  * Created by titatovenaar on 21/11/2016.
  */
 public class SamplePipeline implements Serializable {
-    private  String projectName = "deploy-test-2";
+    private static String projectName = "deploy-test-2";
     private String tablePostFix = YOUR_NAME_HIER;
 
     public static final TupleTag<KV<Integer, Integer>> evenNumbers = new TupleTag<KV<Integer, Integer>>() {};
